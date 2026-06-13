@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>みかん Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-active-nav="">
+
+  <div id="site-header"></div>
+
+  <!-- Hero Carousel -->
+  <section class="hero" id="hero">
+    <div class="hero__track" id="hero-track"></div>
+    <button class="hero__arrow hero__arrow--prev" id="hero-prev" aria-label="前へ">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+      </svg>
+    </button>
+    <button class="hero__arrow hero__arrow--next" id="hero-next" aria-label="次へ">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+      </svg>
+    </button>
+    <div class="hero__dots" id="hero-dots"></div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="section" id="blog">
+    <div class="section__header">
+      <h2 class="section__title">Blog</h2>
+      <a href="blog.html" class="section__link">
+        すべて見る
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+    <div class="card-grid" id="blog-cards"></div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

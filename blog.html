@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - My Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-active-nav="blog">
+
+  <div id="site-header"></div>
+
+  <div class="page-header">
+    <h1 class="page-header__title">Blog</h1>
+    <p class="page-header__subtitle">すべての記事一覧</p>
+  </div>
+
+  <div class="filter-bar">
+    <div class="filter-bar__search">
+      <svg class="filter-bar__search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+      </svg>
+      <input type="text" class="filter-bar__search-input" id="search-input" placeholder="タイトルや本文で検索...">
+    </div>
+    <div class="filter-bar__categories" id="category-filters"></div>
+    <p class="filter-bar__result-count" id="result-count"></p>
+  </div>
+
+  <section class="section">
+    <div class="card-grid" id="blog-cards"></div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>
