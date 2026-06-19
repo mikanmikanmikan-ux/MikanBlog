@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   try {
     const post = await fetchBlogPostById(id);
     renderArticle(container, post);
-    document.title = `${post.title || '記事'} - My Blog`;
+    document.title = `${post.title || '記事'} - みかん Blog`;
   } catch (error) {
     renderError(container, error.message, () => location.reload());
   }
