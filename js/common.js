@@ -19,7 +19,7 @@ function getHeaderHTML(activeId) {
       <header class="header">
         <div class="header__inner">
           <a href="index.html" class="header__logo">
-            <span class="header__logo-icon">B</span>
+            <span class="header__logo-icon">🍊</span>
             みかんBlog
           </a>
           <nav class="header__nav">${navLinks}</nav>
